@@ -1,0 +1,29 @@
+public class Switch {
+    import java.util.Scanner;
+
+
+    
+    public static void main(String[] args) {
+        
+        // Create a Scanner object to read input
+        Scanner scanner = new Scanner(System.in);
+        
+        // Ask the user to enter two numbers
+        System.out.print("Enter the first number: ");
+        int num1 = scanner.nextInt();
+        System.out.print("Enter the second number: ");
+        int num2 = scanner.nextInt();
+        
+        // Determine the maximum number using switch case
+        int maxNum;
+        switch (num1 > num2 ? 1 : num1 < num2 ? -1 : 0) {
+            case 1:
+                maxNum = num1;
+                break;
+            case -1:
+                maxNum = num2;
+                break;
+            default:
+
+    
+}
